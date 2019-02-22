@@ -12,7 +12,7 @@ def select_board(client, board_name):
 
 def assert_valid_config(config: dict):
     if 'repo_name' not in config or 'github_access_token' not in config or 'board_name' not in config or 'trello_api_key' not in config:
-        raise ValueError(f'')
+        raise ValueError(f'Invalid config.')
 
 
 with open('./config.json', 'r') as fp:
