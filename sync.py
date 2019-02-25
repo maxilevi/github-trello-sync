@@ -37,14 +37,6 @@ open_milestones = repo.get_milestones(state='open')
 open_issues = repo.get_issues(state='open')
 added_issues = []
 
-'''
-close_issues_list = board.add_list('Closed Issues')
-for issue in repo.get_issues(state='closed'):
-    if issue.title not in added_issues:
-        close_issues_list.add_card(issue.title)
-        print(f'Adding card {issue.title} to Closed Issues')
-'''
-
 for milestone in open_milestones:
     trello_list = board.add_list(milestone.title)
     print(f'Creating list {milestone.title}')
