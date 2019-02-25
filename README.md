@@ -1,6 +1,6 @@
 # github-trello-sync
 
-Sync your github issues and milestones with a specified trello board
+Sync your trello board with the milestones and issues of a specific github repository
 
 Example `config.json`
 ```json
